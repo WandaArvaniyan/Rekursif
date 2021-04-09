@@ -1,0 +1,14 @@
+public class Fibonacci {
+    public static int fibbon(int a){
+        if (a <= 0 || a <= 1)
+            return a;
+        else
+            return fibbon(a-2) + fibbon(a-1);
+    }
+    public static void main(String[] args){
+        int n = 10;
+        for(int a=1; a<n; a++){
+            System.out.println("f" + a +" = " + fibbon(a));
+        }
+    }
+}
