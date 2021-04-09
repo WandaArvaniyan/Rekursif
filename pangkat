@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class pangkat {
+    public static int pangkat(int x, int y){
+        if(y==0)
+            return 1;
+        else
+            return x * pangkat(x,y-1);
+    }
+    public static void main(String[] args){
+        System.out.println("Bilangan x Pangkat y = ");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bilangan x = ");
+        int x = input.nextInt();
+        
+        System.out.println("Bilangan y = ");
+        int y = input.nextInt();
+        System.out.println(x + " pangkat " + y + " = " + pangkat(x,y));
+    }
+}
